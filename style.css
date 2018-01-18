@@ -1,0 +1,56 @@
+body{
+    background-color: dimgrey;
+}
+.juoda{
+    background-color: black;
+    height: 110px;
+    margin-top: 5px;
+
+}
+.sviesi{
+    background-color: #dcdcdc;
+    height: 600px;
+    padding: 10px;
+}
+.menu{
+    padding: 10px;
+
+}
+.menuline {
+    width: 20px;
+    height: 2px;
+    background-color: gray;
+    margin: 4px 0;
+
+}
+.taskmanager{
+    color: white;
+    font-size: large;
+    padding-left: 10px;
+
+}
+.fa{
+    color: white;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+
+}
+.editcars{
+    color: #9b989c;
+    font-size: x-large;
+    padding-left:10px;
+
+}
+.editfields{
+    border: solid 1px grey ;
+    border-radius: 10px;
+
+
+}
+
+.smallgrey{
+    font-size: x-small;
+    color: #9b989c;
+    font-family: Arial;
+}
