@@ -2,14 +2,14 @@ body{
     background-color: dimgrey;
 }
 .juoda{
-    background-color: black;
-    height: 110px;
+    background-color: #272629;
+    height: 5%;
     margin-top: 5px;
 
 }
 .sviesi{
-    background-color: #dcdcdc;
-    height: 600px;
+    background-color: #e3e6e6;
+    height: 100%;
     padding: 10px;
 }
 .menu{
@@ -43,14 +43,55 @@ body{
 
 }
 .editfields{
-    border: solid 1px grey ;
-    border-radius: 10px;
-
-
+    border: solid 1.2px #bababa;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 0;
 }
-
 .smallgrey{
-    font-size: x-small;
-    color: #9b989c;
+    font-size: 11px;
+    color: #aaaaaa;
     font-family: Arial;
+    margin-bottom: 0;
+    padding: 5px;
 }
+.firstlight{
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+.scndlight{
+    background-color: #f5f5f5;
+    border-radius: 7px;
+    padding: 10px 15px 10px 35px;
+    margin-top: 5px;
+}
+.chech{
+    padding: 3px;
+    border-radius: 7px;
+}
+
+.line {
+    border-bottom: solid 1px #969696;
+}
+.chechbox {
+    border: solid 1px #696969;
+    border-radius: 5px;
+    width: 37px;
+    height: 37px;
+    background-color: #696969;
+    margin-top: 3px;
+
+}
+.timesbox{
+    border: solid 1px #d1d1d1;
+    border-radius: 5px;
+    width: 37px;
+    height: 37px;
+    background-color: #f5f5f5;
+    margin-top: 3px;
+    color: #696969;
+}
+.ibox{
+    padding-left: 1px;
+}
+
