@@ -9,6 +9,7 @@ body{
 }
 .sviesi{
     background-color: #e3e6e6;
+    width: 100%;
     height: 100%;
     padding: 10px;
 }
@@ -34,6 +35,7 @@ body{
     width: 20px;
     height: 20px;
     padding: 10px;
+    cursor: pointer;
 
 }
 .editcars{
@@ -94,4 +96,3 @@ body{
 .ibox{
     padding-left: 1px;
 }
-

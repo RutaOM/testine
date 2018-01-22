@@ -7,117 +7,118 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-xs-12 juoda">
-                <div class="menu">
-                    <div class="row">
-                        <div>
-                            <div class="menuline"></div>
-                            <div class="menuline"></div>
-                            <div class="menuline"></div>
-                        </div>
-                        <p class="taskmanager"><strong>TASK</strong>MANAGER</p>
-                    </div>
-                    </div>
-                    <div class="row">
-                        <div>
-                        <span class="fa fa-arrow-left"></span></div>
-                        <p class="editcars">| Edit cars</p>
-                    </div>
-                </div>
-                </div>
-
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-xs-12 sviesi">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-xs-12 juoda">
+            <div class="menu">
                 <div class="row">
-                    <div class="col-lg-2 col-md-2 col-xs-2"></div>
-                    <div class="col-lg-8 col-md-8 col-xs-8 firstlight">
-                        <div class="row ">
-                            <div class="col-lg-1 col-md-1 col-xs-1">
-                                <p class="smallgrey">Row#</p>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-xs-4">
-                                <p class="smallgrey">Name</p>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-xs3">
-                                <p class="smallgrey">Type</p>
-                            </div>
-                            <div class="col-lg-2 col-md-2 col-xs-2">
-                                <p class="smallgrey">Colour</p>
-                            </div>
-                            <div class="col-lg-2 col-md-2 col-xs-2 editfields">
-                                <p class="smallgrey">EDIT FIELDS</p>
-                            </div>
+                    <div>
+                        <div class="menuline"></div>
+                        <div class="menuline"></div>
+                        <div class="menuline"></div>
+                    </div>
+                    <p class="taskmanager"><strong>TASK</strong>MANAGER</p>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <span class="fa fa-arrow-left"></span></div>
+                <p class="editcars">| Edit cars</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-xs-12 sviesi">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-xs-2"></div>
+                <div class="col-lg-8 col-md-8 col-xs-8 firstlight">
+                    <div class="row ">
+                        <div class="col-lg-1 col-md-1 col-xs-1">
+                            <p class="smallgrey">Row#</p>
                         </div>
+                        <div class="col-lg-4 col-md-4 col-xs-4">
+                            <p class="smallgrey">Name</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-xs3">
+                            <p class="smallgrey">Type</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-xs-2">
+                            <p class="smallgrey">Colour</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-xs-2 editfields">
+                            <p class="smallgrey">EDIT FIELDS</p>
+                        </div>
+                    </div>
 
                 </div>
-                    <div class="col-lg-2 col-md-2 col-xs-2"></div>
+                <div class="col-lg-2 col-md-2 col-xs-2"></div>
 
             </div>
-                <div class="row">
-                    <div class="col-lg-2 col-md-2 col-xs-2"></div>
-                    <div class="col-lg-8 col-md-8 col-xs-8 scndlight">
-                        <div class="row">
-                            <div class="col-lg-1 col-md-1 col-xs-1 chech">
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-xs-4 chech">
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-xs-3 chech">
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="col-lg-2 col-md-2 col-xs-2 chech">
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="col-lg-1 col-md-1 col-xs-1">
-                                <i class="fa fa-check chechbox" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-lg-1 col-md-1 col-xs-1 ibox">
-                                <i class="fa fa-times timesbox" aria-hidden="true"></i>
-                            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-xs-2"></div>
+                <div class="col-lg-8 col-md-8 col-xs-8 scndlight">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-1 col-xs-1 chech">
+                            <input type="text" id="row" class="form-control">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-4 chech">
+                            <input type="text" id="name" class="form-control">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-xs-3 chech">
+                            <input type="text" id="tipas" class="form-control">
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-xs-2 chech">
+                            <input type="text" id="colour" class="form-control">
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-xs-1">
+                            <span class="fa fa-check chechbox btn-save-car" id="chechbox" aria-hidden="true" onclick='(submit)'></span>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-xs-1 ibox">
+                            <span class="fa fa-times timesbox" id="timesbox" aria-hidden="true"></span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-2"></div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-xs-2"></div>
+                <div class="col-lg-8 col-md-8 col-xs-8 firstlight">
+                    <div class="row line">
+                        <div class="col-lg-1 col-md-1 col-xs-1">
+
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-4">
+                            <div id="printcar"></div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-xs-2">
+                            <div id="printtipas"></div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-xs-3">
+                            <div id="printcolour"></div>
                         </div>
 
                     </div>
-                    <div class="col-lg-2 col-md-2 col-xs-2"></div>
-
                 </div>
-                <div class="row">
-                    <div class="col-lg-2 col-md-2 col-xs-2"></div>
-                    <div class="col-lg-8 col-md-8 col-xs-8 firstlight">
-                        <div class="row line">
-                            <div class="col-lg-1 col-md-1 col-xs-1">
-                                <p></p>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-xs-4">
+                <div class="col-lg-2 col-md-2 col-xs-2"></div>
 
-                            </div>
-                            <div class="col-lg-2 col-md-2 col-xs-2">
-                                <p></p>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-xs-3">
-                                <p></p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-xs-2"></div>
-
-                </div>
+            </div>
+            <div class="car-list"></div>
         </div>
 
     </div>
-    </div>
+</div>
 
 
 
 <body>
-<script src="uzduotis.js"></script>
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/e17541f68b.js"></script>
-
+<script src="uzduotis.js"></script>
 </body>
 </html>
