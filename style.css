@@ -1,3 +1,4 @@
+
 body{
     background-color: dimgrey;
 }
@@ -9,21 +10,22 @@ body{
 }
 .sviesi{
     background-color: #e3e6e6;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
+    padding: 20px 0 0 0;
 }
 .menu{
     padding: 10px;
 
 }
+
 .menuline {
     width: 20px;
     height: 2px;
     background-color: gray;
     margin: 4px 0;
-
+    cursor: pointer;
 }
+
+
 .taskmanager{
     color: white;
     font-size: large;
@@ -44,36 +46,40 @@ body{
     padding-left:10px;
 
 }
-.editfields{
+.editfields {
     border: solid 1.2px #bababa;
     border-radius: 5px;
     text-align: center;
     margin-bottom: 0;
+    cursor: pointer;
+    width: 20px;
+
 }
+
 .smallgrey{
     font-size: 11px;
     color: #aaaaaa;
     font-family: Arial;
     margin-bottom: 0;
-    padding: 5px;
+    padding: 7px 14px;
 }
 .firstlight{
-    margin-top: 25px;
-    margin-bottom: 5px;
+   padding: 15px 15px 0 15px;
 }
 .scndlight{
     background-color: #f5f5f5;
     border-radius: 7px;
-    padding: 10px 15px 10px 35px;
+    padding: 10px 25px;
     margin-top: 5px;
 }
 .chech{
-    padding: 3px;
-    border-radius: 7px;
+    padding: 3px 8px;
+    border-radius: 15px;
 }
 
 .line {
     border-bottom: solid 1px #969696;
+
 }
 .chechbox {
     border: solid 1px #696969;
@@ -95,4 +101,67 @@ body{
 }
 .ibox{
     padding-left: 1px;
+}
+.line{
+    padding-bottom: 10px;
+}
+.printrow{
+    color: #9b989c;
+    font-family: Arial;
+    font-size: 12px;
+}
+.printcar{
+    font-size: 20px;
+    color: #5a585e;
+    font-family: Arial;
+}
+.printtype{
+    color: #9b989c;
+    font-family: Arial;
+    font-size: 12px;
+}
+.printcolour{
+    color: #9b989c;
+    font-family: Arial;
+    font-size: 12px;
+}
+.btn-edit{
+    background-color: #e6e6e6;
+    border: solid 1px #d4d4d4;
+    border-radius: 7px;
+    padding: 7px 12px;
+    font-size: 11px;
+    color: #9b989c;
+    cursor: pointer;
+    margin-right: 7px;
+}
+
+.btn-remove{
+    background-color: #e6e6e6;
+    border: solid 1px #d4d4d4;
+    border-radius: 7px;
+    padding: 7px 12px;
+    font-size: 11px;
+    color: #9b989c;
+    cursor: pointer;
+}
+
+.btn-edit:hover{
+    background-color: white;
+}
+
+.btn-remove:hover{
+    background-color: white;
+}
+.firstlight:hover{
+    background-color: #eaeaea;
+}
+.editfields:hover{
+    background-color: #fafafa;
+}
+.btn-save-car:hover{
+    background-color: #7e7e7e;
+}
+.btn-clear:hover{
+    background-color: white;
 }

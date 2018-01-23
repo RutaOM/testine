@@ -13,9 +13,9 @@
             <div class="menu">
                 <div class="row">
                     <div>
-                        <div class="menuline"></div>
-                        <div class="menuline"></div>
-                        <div class="menuline"></div>
+                        <div class="menuline" onclick="location.href='http://www.google.com'"></div>
+                        <div class="menuline" onclick="location.href='http://www.delfi.lt'"></div>
+                        <div class="menuline" onclick="location.href='http://www.15min.lt'"></div>
                     </div>
                     <p class="taskmanager"><strong>TASK</strong>MANAGER</p>
                 </div>
@@ -46,8 +46,8 @@
                         <div class="col-lg-2 col-md-2 col-xs-2">
                             <p class="smallgrey">Colour</p>
                         </div>
-                        <div class="col-lg-2 col-md-2 col-xs-2 editfields">
-                            <p class="smallgrey">EDIT FIELDS</p>
+                        <div class="col-lg-2 col-md-2 col-xs-2">
+                            <span class="smallgrey editfields" id="btn-edit-fields">EDIT FIELDS</span>
                         </div>
                     </div>
 
@@ -66,17 +66,17 @@
                             <input type="text" id="name" class="form-control">
                         </div>
                         <div class="col-lg-3 col-md-3 col-xs-3 chech">
-                            <input type="text" id="tipas" class="form-control">
+                            <input type="text" id="type" class="form-control">
                         </div>
                         <div class="col-lg-2 col-md-2 col-xs-2 chech">
                             <input type="text" id="colour" class="form-control">
                         </div>
                         <div class="col-lg-1 col-md-1 col-xs-1">
-                            <span class="fa fa-check chechbox btn-save-car" id="chechbox" aria-hidden="true" onclick='(submit)'></span>
+                            <span class="fa fa-check chechbox btn-save-car" id="chechbox" aria-hidden="true" onclick="submit()"></span>
                         </div>
                         <div class="col-lg-1 col-md-1 col-xs-1 ibox">
-                            <span class="fa fa-times timesbox" id="timesbox" aria-hidden="true"></span>
-                        </div>
+                            <span class="fa fa-times timesbox btn-clear"  id="timesbox" aria-hidden="true" onclick="clear()"></span>
+                    </div>
                     </div>
 
                 </div>
@@ -88,16 +88,22 @@
                 <div class="col-lg-8 col-md-8 col-xs-8 firstlight">
                     <div class="row line">
                         <div class="col-lg-1 col-md-1 col-xs-1">
-
+                            <span class="printrow" id="printrow">1</span>
                         </div>
                         <div class="col-lg-4 col-md-4 col-xs-4">
-                            <div id="printcar"></div>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-xs-2">
-                            <div id="printtipas"></div>
+                            <span class="printcar"  id="printcar">Mercedes Sprinter</span>
                         </div>
                         <div class="col-lg-3 col-md-3 col-xs-3">
-                            <div id="printcolour"></div>
+                            <span class="printtype" id="printtype">2.2 TDI</span>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-xs-2">
+                            <span class="printcolour" id="printcolour">White</span>
+                        </div>
+                        <div>
+                            <span class="btn-edit" onclick="edit()">EDIT</span>
+                        </div>
+                        <div>
+                            <span class="btn-remove" onclick="remove()">REMOVE</span>
                         </div>
 
                     </div>
