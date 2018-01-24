@@ -1,11 +1,11 @@
 var rowElement = document.getElementById('row');
 var nameElement = document.getElementById('name');
-var tipasElement = document.getElementById('tipas');
+var typeElement = document.getElementById('type');
 var colourElement = document.getElementById('colour');
 var chechBoxElement = document.getElementById('chechbox');
 var timesBoxElement = document.getElementById('timesbox');
 
-// localStorage.setItem("cars", JSON.stringify([])); //isvalom masinu sarasa
+localStorage.setItem("cars", JSON.stringify([])); //isvalom masinu sarasa
 
 //cia saugosim visas suvestas auto
 var carsJSON = localStorage.getItem("cars"); //pasiimsim auto is localstorage
@@ -15,9 +15,10 @@ if(carList == null){
 	carList = []		//jei sarasas tuscias-sukurti masyva, i kuri bus saugomos suvestos auto
 }
 
-addCar(1,'asd','asd','asd');
-addCar(1,'asdsa','asasdasdd','aasdassd');
+/*addCar(1,'asd','asd','asd');
+addCar(1,'asdsa','asasdasdd','aasdassd');*/
 renderCars();
+
 function renderCars(){
 
     if(!carList) return; //jei tuscias masyvas-iseik
@@ -35,14 +36,17 @@ function renderCars(){
                                 <p class="smallgrey">${car.name}</p>
                             </div>
                             <div class="col-lg-3 col-md-3 col-xs3">
-                                <p class="smallgrey">${car.tipas}</p>
+                                <p class="smallgrey">${car.type}</p>
                             </div>
                             <div class="col-lg-2 col-md-2 col-xs-2">
                                 <p class="smallgrey">${car.colour}</p>
                             </div>
-                            <div class="col-lg-2 col-md-2 col-xs-2 editfields">
-                                <p class="smallgrey">EDIT FIELDS</p>
-                            </div>
+                             <div>
+                            <span class="btn-edit" onclick="edit()">EDIT</span>
+                        </div>
+                        <div>
+                            <span class="btn-remove" onclick="remove()">REMOVE</span>
+                        </div>
                         </div>
                 	</div>
                     <div class="col-lg-2 col-md-2 col-xs-2"></div>
@@ -59,20 +63,15 @@ function renderCars(){
 // addCarButton.addEventListener("click", addCar);
 //
 function addCar(row, name, type, colour){
-	// var row = rowElement.value;
-	// var name = nameElement.value;
-	// var tipas = tipasElement.value;
-	// var colour = colourElement.value;
-    //
-	// if(!row || !name || !tipas || !colour){
-	// 	alert("Užpildykite visus laukelius.");
-	// 	return;
-	// }
+    if(!row || !name || !type || !colour){
+	alert("Užpildykite visus laukelius.");
+	return;
+}
 
     var car = {
         "row": row,
         "name": name,
-        "tipas": type,
+        "type": type,
         "colour": colour
     }
 
@@ -98,16 +97,14 @@ function addCar(row, name, type, colour){
 //
 //
 //
-// 	function submit(){
-//
-// 		var name = nameElement.value;
-// 		var tipas = tipasElement.value;
-// 		var colour = colourElement.value;
-//
-// 	document.getElementById('printcar').innerHTML = "masinos pavadinimas"+name;
-// 	document.getElementById('printtipas').innerHTML = tipas;
-// 	document.getElementById('printcolour').innerHTML = colour;
-//
-//
-// }
+ 	function submit(){
+        var row = rowElement.value;
+        var name = nameElement.value;
+        var type = typeElement.value;
+        var colour = colourElement.value;
+        addCar(row, name, type, colour);
+        renderCars();
+}
+  function remove() {
 
+  }
