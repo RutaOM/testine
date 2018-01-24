@@ -5,7 +5,7 @@ var colourElement = document.getElementById('colour');
 var chechBoxElement = document.getElementById('chechbox');
 var timesBoxElement = document.getElementById('timesbox');
 
-localStorage.setItem("cars", JSON.stringify([])); //isvalom masinu sarasa
+ localStorage.setItem("cars", JSON.stringify([])); //isvalom masinu sarasa
 
 //cia saugosim visas suvestas auto
 var carsJSON = localStorage.getItem("cars"); //pasiimsim auto is localstorage
@@ -24,44 +24,43 @@ function renderCars(){
     if(!carList) return; //jei tuscias masyvas-iseik
     var result = "";
 
-    for(var car of carList){  //naujas! nebe lauko pavad, o ima reiksme in ima is kaires, o sitas reiksme
+
+    for(var car of carList){
+        var index= 0;
         result += `<div class="row">
                     <div class="col-lg-2 col-md-2 col-xs-2"></div>
                     <div class="col-lg-8 col-md-8 col-xs-8 firstlight">
-                        <div class="row ">
+                        <div class="row line">
                             <div class="col-lg-1 col-md-1 col-xs-1">
-                                <p class="smallgrey">${car.row}</p>
+                                <p class="printrow" id="printrow">${car.row}</p>
                             </div>
                             <div class="col-lg-4 col-md-4 col-xs-4">
-                                <p class="smallgrey">${car.name}</p>
+                                <p class="printcar" id="printcar">${car.name}</p>
                             </div>
                             <div class="col-lg-3 col-md-3 col-xs3">
-                                <p class="smallgrey">${car.type}</p>
+                                <p class="printtype" id="printtype">${car.type}</p>
                             </div>
                             <div class="col-lg-2 col-md-2 col-xs-2">
-                                <p class="smallgrey">${car.colour}</p>
+                                <p class="printcolour" id="printcolour">${car.colour}</p>
                             </div>
                              <div>
-                            <span class="btn-edit" onclick="edit()">EDIT</span>
+                            <span class="btn-edit" onclick="editCar(this.index)">EDIT</span>
                         </div>
                         <div>
-                            <span class="btn-remove" onclick="remove()">REMOVE</span>
+                            <span class="btn-remove" onclick="removeCar(this.index)">REMOVE</span>
                         </div>
                         </div>
                 	</div>
                     <div class="col-lg-2 col-md-2 col-xs-2"></div>
             	</div>`/*riestiniuose rasom kintamojo reiksme*/
         ;
-
+        index++;
     }
     var carListElement = document.querySelector(".car-list");
     carListElement.innerHTML = result;
 }
 
-//
-// var addCarButton = document.querySelector(".btn-save-car");
-// addCarButton.addEventListener("click", addCar);
-//
+
 function addCar(row, name, type, colour){
     if(!row || !name || !type || !colour){
 	alert("Užpildykite visus laukelius.");
@@ -75,29 +74,30 @@ function addCar(row, name, type, colour){
         "colour": colour
     }
 
+    if(chechForDuplicates(car)){                                                                                            //chech for duplicates
+        alert("Toks automobilis jau yra įrašytas");
+        return;
+    }
+
     carList.push(car);
     carsJSON = JSON.stringify(carList); //gauta auto perrasyti json formatu(papildymas)
     localStorage.setItem("cars", carsJSON);
-
-    // renderCars();
+    console.log(carList);
 }
-//
-// var record = {
-// 	"row": row,
-// 	"name": name,
-// 	"tipas": tipas,
-// 	"colour": colour
-// }
-//
-//
-//
-// carList.push(record);
-// carsJSON = JSON.stringify(carList); //gauta auto perrasyti json formatu(papildymas)
-// localStorage.setItem("cars", carsJSON);
-//
-//
-//
- 	function submit(){
+
+function chechForDuplicates(car) {
+    var isDuplicate=false;
+
+    carList.forEach(function (item) {
+        if(item.name == car.name && item.type == car.type && item.colour == car.colour){
+            isDuplicate = true;
+        }
+    });
+    return isDuplicate;                                                                                                    // chech for duplicates ends.
+
+}
+
+function submitCar(){
         var row = rowElement.value;
         var name = nameElement.value;
         var type = typeElement.value;
@@ -105,6 +105,35 @@ function addCar(row, name, type, colour){
         addCar(row, name, type, colour);
         renderCars();
 }
-  function remove() {
 
-  }
+function clearCar(){
+        rowElement.value = "";
+        nameElement.value = "";
+        typeElement.value = "";
+        colourElement.value = "";
+}
+
+function removeCar(index) {
+   carList.splice(index,1); //turi removeinti paselektinta elementa
+    console.log(carList);
+    renderCars();
+
+}
+
+function editCar(id) {
+    var car = findElement(id);
+
+    function findElement(id) {
+        var count = 0;
+        for(car of carList);{
+            if(car.name == id );
+            return car;
+        }
+        count++;
+
+    }
+
+
+}
+
+//reikia numesti info atgal i inputus

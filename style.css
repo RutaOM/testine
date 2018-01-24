@@ -125,7 +125,7 @@ body{
     font-family: Arial;
     font-size: 12px;
 }
-.btn-edit{
+.btn-edit {
     background-color: #e6e6e6;
     border: solid 1px #d4d4d4;
     border-radius: 7px;
@@ -134,6 +134,7 @@ body{
     color: #9b989c;
     cursor: pointer;
     margin-right: 7px;
+    display: none;
 }
 
 .btn-remove{
@@ -144,6 +145,7 @@ body{
     font-size: 11px;
     color: #9b989c;
     cursor: pointer;
+    display: none;
 }
 
 .btn-edit:hover{
@@ -152,16 +154,31 @@ body{
 
 .btn-remove:hover{
     background-color: white;
+
 }
 .firstlight:hover{
     background-color: #eaeaea;
 }
-.editfields:hover{
-    background-color: #fafafa;
-}
+
 .btn-save-car:hover{
     background-color: #7e7e7e;
 }
 .btn-clear:hover{
     background-color: white;
+}
+
+
+.firstlight:hover .btn-edit, .firstlight:hover .btn-remove{
+    display: block;
+}
+input::-webkit-inner-spin-button {
+    -webkit-appearance: inner-spin-button;
+    display: inline-block;
+    cursor: default;
+    flex: 0 0 auto;
+    align-self: stretch;
+    -webkit-user-select: none;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-user-modify: read-only;
 }
