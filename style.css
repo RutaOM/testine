@@ -1,67 +1,84 @@
-
+* {
+    box-sizing: border-box;
+}
 body{
-    background-color: dimgrey;
+    background-color: #e3e6e6;
 }
 .juoda{
     background-color: #272629;
     height: 5%;
-    margin-top: 5px;
-
 }
-.sviesi{
+.sviesi {
     background-color: #e3e6e6;
     padding: 20px 0 0 0;
 }
+
 .menu{
-    padding: 10px;
+    padding: 25px 10px;
+
+}
+.menubox{
+    margin-top: 8px;
 
 }
 
 .menuline {
-    width: 20px;
-    height: 2px;
+    width: 30px;
+    height: 3px;
     background-color: gray;
     margin: 4px 0;
     cursor: pointer;
 }
 
-
 .taskmanager{
     color: white;
-    font-size: large;
-    padding-left: 10px;
-
+    font-size: x-large;
+    padding-left: 15px;
 }
+
 .fa{
-    color: white;
+    color: #969696;
     width: 20px;
     height: 20px;
     padding: 10px;
     cursor: pointer;
+}
 
+.arrow{
+    margin: 0 25px 5px 0;
+}
+
+.slash{
+    color: #5a585e;
+    font-size: 25px;
+    margin: 1px 15px;
 }
 .editcars{
-    color: #9b989c;
-    font-size: x-large;
+    color: #c9c5ca;
+    font-size: 30px;
     padding-left:10px;
-
+    font-family: Arial;
 }
+
 .editfields {
     border: solid 1.2px #bababa;
     border-radius: 5px;
     text-align: center;
     margin-bottom: 0;
     cursor: pointer;
-    width: 20px;
-
+    width: 30px;
+}
+.editfieldscol{
+    width: 30px;
 }
 
 .smallgrey{
-    font-size: 11px;
+    font-size: 15px;
     color: #aaaaaa;
     font-family: Arial;
     margin-bottom: 0;
     padding: 7px 14px;
+
 }
 .firstlight{
    padding: 15px 15px 0 15px;
@@ -69,12 +86,22 @@ body{
 .scndlight{
     background-color: #f5f5f5;
     border-radius: 7px;
-    padding: 10px 25px;
+    padding: 10px 10px;
     margin-top: 5px;
 }
+
+.form-control{
+    height: 50px;
+    border-radius: 7px;
+    margin: 0 10px 0 10px;
+    -moz-box-shadow:    inset 0 8px 5px -6px #e6e6e6;
+    -webkit-box-shadow: inset 0 8px 5px -6px #e6e6e6;
+    box-shadow:         inset 0 8px 5px -6px #e6e6e6;
+}
 .chech{
-    padding: 3px 8px;
+    padding: 5px 8px;
     border-radius: 15px;
+
 }
 
 .line {
@@ -83,47 +110,51 @@ body{
 }
 .chechbox {
     border: solid 1px #696969;
-    border-radius: 5px;
-    width: 37px;
-    height: 37px;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
     background-color: #696969;
-    margin-top: 3px;
+
 
 }
 .timesbox{
     border: solid 1px #d1d1d1;
-    border-radius: 5px;
-    width: 37px;
-    height: 37px;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
     background-color: #f5f5f5;
-    margin-top: 3px;
+
     color: #696969;
+
 }
-.ibox{
-    padding-left: 1px;
-}
+
 .line{
-    padding-bottom: 10px;
+    padding: 15px 0;
 }
 .printrow{
     color: #9b989c;
     font-family: Arial;
-    font-size: 12px;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 100;
 }
-.printcar{
-    font-size: 20px;
+.printcar {
+    font-size: 30px;
     color: #5a585e;
     font-family: Arial;
+    font-weight: 100;
 }
 .printtype{
     color: #9b989c;
     font-family: Arial;
-    font-size: 12px;
+    font-size: 18px;
+    font-weight: 100;
 }
 .printcolour{
     color: #9b989c;
     font-family: Arial;
-    font-size: 12px;
+    font-size: 18px;
+    font-weight: 100;
 }
 .btn-edit {
     background-color: #e6e6e6;
@@ -166,19 +197,18 @@ body{
 .btn-clear:hover{
     background-color: white;
 }
-
+.row{
+    margin: 0;
+}
 
 .firstlight:hover .btn-edit, .firstlight:hover .btn-remove{
     display: block;
 }
-input::-webkit-inner-spin-button {
-    -webkit-appearance: inner-spin-button;
-    display: inline-block;
-    cursor: default;
-    flex: 0 0 auto;
-    align-self: stretch;
-    -webkit-user-select: none;
-    opacity: 0;
-    pointer-events: none;
-    -webkit-user-modify: read-only;
+
+.nopadding {
+    padding: 0;
+
+}
+.padding{
+    padding: 5px;
 }
