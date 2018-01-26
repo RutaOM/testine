@@ -32,64 +32,86 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-lg-12 col-md-12 col-xs-12 sviesi">
+
+    <div class="row labels">
+        <div class="col-lg-8 col-md-8 col-xs-8 mx-auto">
             <div class="row">
-                <div class="col-lg-8 col-md-8 col-xs-8 mx-auto firstlight">
-                    <div class="row ">
-                        <div class="col-lg-1 col-md-1 col-xs-1">
-                            <p class="smallgrey">Row#</p>
+                <div class="col-lg-12 col-md-12 col-xs-12 nopadding">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-xs-5">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-3 col-xs-3">
+                                    <p class="smallgrey">Row#</p>
+                                </div>
+                                <div class="col-lg-10 col-md-9 col-xs-9">
+                                    <p class="smallgrey">Name</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-xs-4">
-                            <p class="smallgrey">Name</p>
+                        <div class="col-lg-5 col-md-5 col-xs-5">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-6">
+                                    <p class="smallgrey">Type</p>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-6">
+                                    <p class="smallgrey">Colour</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-xs-3">
-                            <p class="smallgrey">Type</p>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-xs-2">
-                            <p class="smallgrey">Colour</p>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-xs-2 editfieldscol">
-                            <span class="smallgrey editfields" id="btn-edit-fields">EDIT FIELDS</span>
+                        <div class="col-lg-2 col-md-2 col-xs-2 nopadding padding">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-xs-12 nopadding">
+                                    <span class="editfields padding" id="btn-edit-fields">EDIT FIELDS</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
 
 
             </div>
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-xs-8 mx-auto scndlight">
                     <div class="row">
-                        <div class="col-lg-12 col-md-12 col-xs-12">
+                        <div class="col-lg-12 col-md-12 col-xs-12 nopadding">
                             <div class="row">
-                        <div class="col-lg-1 col-md-1 col-xs-1 chech">
-                            <input type="number" id="row" class="form-control rowchech" value="">
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-xs-4 chech">
-                            <input type="text" id="name" class="form-control" value="">
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-xs-3 chech">
-                            <input type="text" id="type" class="form-control" value="">
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-xs-3 chech">
-                            <input type="text" id="colour" class="form-control" value="">
-                        </div>
-                        <div class="col-lg-1">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <span class="fa fa-check chechbox btn-save-car" id="chechbox" aria-hidden="true" onclick="submitCar()"></span>
+                                <div class="col-lg-5 col-md-5 col-xs-5 padding">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-3 col-xs-3 padding">
+                                            <input type="number" id="row" class="form-control rowchech" value="">
+                                        </div>
+                                        <div class="col-lg-10 col-md-9 col-xs-9 padding">
+                                            <input type="text" id="name" class="form-control" value="">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <span class="fa fa-times timesbox btn-clear"  id="timesbox" aria-hidden="true" onclick="clearCar()"></span>
-                                 </div>
+                                <div class="col-lg-5 col-md-5 col-xs-5 padding">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-6 padding">
+                                            <input type="text" id="type" class="form-control typemargin" value="">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-6 padding">
+                                            <input type="text" id="colour" class="form-control colourmargin" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-xs-2 nopadding">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-6 btnelement">
+                                            <span class="fa fa-check chechbox btn-save-car" id="chechbox" aria-hidden="true" onclick="submitCar()"></span>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-6 btnelement">
+                                            <span class="fa fa-times timesbox btn-clear"  id="timesbox" aria-hidden="true" onclick="clearCar()"></span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                        </div>
-                    </div>
-
                 </div>
-
             </div>
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-xs-8 mx-auto">
@@ -124,49 +146,12 @@
     </div>
 
 </div>
-
-
-
-<div class="row">
-    <div class="col-lg-8">
-       <div class="row">
-           <div class="col-lg-12">
-               <div class="row">
-                   <div class="col-lg-5 padding">
-                       <div class="row">
-                           <div class="col-lg-3 padding">
-                               <input type="number" id="row" class="form-control rowchech" value="">
-                           </div>
-                            <div class="col-lg-9 padding">
-                                <input type="text" id="name" class="form-control" value="">
-                            </div>
-                       </div>
-                   </div>
-                   <div class="col-lg-5 padding">
-                       <div class="row">
-                            <div class="col-lg-6 padding">
-                                <input type="text" id="type" class="form-control" value="">
-                            </div>
-                           <div class="col-lg-6 padding">
-                               <input type="text" id="colour" class="form-control" value="">
-                           </div>
-                       </div>
-                   </div>
-                   <div class="col-lg-2 padding">
-                       <div class="row">
-                           <div class="col-lg-6 padding">
-                               <span class="fa fa-check chechbox btn-save-car" id="chechbox" aria-hidden="true" onclick="submitCar()"></span>
-                           </div>
-                           <div class="col-lg-6 padding">
-                               <span class="fa fa-times timesbox btn-clear"  id="timesbox" aria-hidden="true" onclick="clearCar()"></span>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-    </div>
 </div>
+
+
+
+
+
 
 
 

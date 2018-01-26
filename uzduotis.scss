@@ -1,0 +1,230 @@
+$header-color: #1b1f25;
+$body-color: #dfe4e8;
+$onclick-line-color: #e9edf2;
+$onclick-button-color: #ffffff;
+$menu-color: #8b9095;
+$slash-color: #40454a;
+$back-arrow-color: #d5dbe0;
+$edit-cars-tag-color: #e9edf2;
+$tag-color: #82888e;
+$frame-color: #babfc4;
+$car-name-color: #262c35;
+$car-atributes-color: #adb3b8;
+$line-color: #bcc2c8;
+$shadow-color: #f1f2f3;
+$btn-frame-color: #c2c6cc;
+$btn-tag-color: #747981;
+$edit-fiels-tag-color: #70767d;
+$chech-btn-color: #646970;
+$x-btn-fa-color: #9297a0;
+$font-stack: Arial;
+$input-row-color: #f4f6f9;
+
+
+body{
+  background-color: $body-color;
+}
+
+.tm-header{
+  background-color: $header-color;
+  margin: 0;
+  height: 150px;
+
+  .menu {
+    padding: 20px 0 0 20px;
+
+    .menubox {
+      float: left;
+      margin-top: 2px;
+    }
+
+    .menu-line {
+      background-color: $menu-color;
+      width: 30px;
+      height: 3px;
+      margin: 4px 0;
+      cursor: pointer;
+    }
+
+    .taskmanager {
+      color: white;
+      font-size: x-large;
+      font-family: $font-stack;
+      margin: 0 0 0 50px;
+    }
+
+    .backpage{
+      float: left;
+    }
+
+    .edit-cars-tag{
+      float: left;
+    }
+
+
+    .slash-tag{
+      float: left;
+    }
+  }
+
+    .fa{
+      color: $back-arrow-color;
+      margin: 0;
+    }
+
+    .slash{
+      color: $slash-color;
+      margin: 0;
+    }
+
+    .editcars{
+      color: $edit-cars-tag-color;
+      font-family: $font-stack;
+      font-size: 30px;
+      margin: 0;
+    }
+
+  .backarrow{
+    float: left;
+    padding: 15px;
+
+  }
+}
+
+.tm-body{
+  background-color: $body-color;
+  margin: 35px 15% 35px 15%;
+
+  .tags{
+    color: $tag-color;
+    font-family: $font-stack;
+    font-size: 15px;
+    margin: 0 0 0 20px;
+
+    .row-tag{
+      margin-right: 5% ;
+    }
+
+    .name-tag{
+      margin-right: 30%;
+    }
+
+    .type-tag{
+      margin-right: 20%;
+    }
+
+    .colour-tag{
+      margin-right: 15%;
+    }
+
+    .btn-editfields{
+      border: solid 1px $frame-color;
+      border-radius: 7px;
+      padding: 10px 25px 10px 25px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+
+
+
+}
+
+.input-division {
+   background-color: $input-row-color;
+   padding: 15px 15px 15px 25px;
+   border-radius: 10px;
+   margin-top: 25px;
+   height: 55px;
+
+
+    .row-division {
+      float: left;
+
+      .row-input {
+        width: 60px;
+        height: 50px;
+        border: solid 1px $frame-color;
+        border-radius: 7px;
+        margin-right: 20px;
+        -moz-box-shadow:    inset 0 8px 5px -6px $shadow-color;
+        -webkit-box-shadow: inset 0 8px 5px -6px $shadow-color;
+        box-shadow:         inset 0 8px 5px -6px $shadow-color;
+      }
+
+    }
+
+    .name-division {
+      float: left;
+
+      .name-input {
+        width: 350px;
+        height: 50px;
+        border: solid 1px $frame-color;
+        border-radius: 7px;
+        margin-right: 20px;
+        -moz-box-shadow:    inset 0 8px 5px -6px $shadow-color;
+        -webkit-box-shadow: inset 0 8px 5px -6px $shadow-color;
+        box-shadow:         inset 0 8px 5px -6px $shadow-color;
+      }
+    }
+
+    .type-division {
+      float: left;
+
+      .type-input {
+        width: 250px;
+        height: 50px;
+        border: solid 1px $frame-color;
+        border-radius: 7px;
+        margin-right: 20px;
+        -moz-box-shadow:    inset 0 8px 5px -6px $shadow-color;
+        -webkit-box-shadow: inset 0 8px 5px -6px $shadow-color;
+        box-shadow:         inset 0 8px 5px -6px $shadow-color;
+      }
+    }
+
+    .colour-division {
+      float: left;
+
+      .colour-input {
+        width: 250px;
+        height: 50px;
+        border: solid 1px $frame-color;
+        border-radius: 7px;
+        margin-right: 20px;
+        -moz-box-shadow:    inset 0 8px 5px -6px $shadow-color;
+        -webkit-box-shadow: inset 0 8px 5px -6px $shadow-color;
+        box-shadow:         inset 0 8px 5px -6px $shadow-color;
+      }
+    }
+
+    .chech-btn-division {
+      float: left;
+
+      .btn-save-car {
+        width: 50px;
+        height: 50px;
+        border: solid 1px $frame-color;
+        border-radius: 7px;
+        margin-right: 10px;
+        background-color: $chech-btn-color;
+        color: white;
+        cursor: pointer;
+      }
+    }
+
+    .x-btn-division {
+      float: left;
+
+      .btn-clear {
+        width: 50px;
+        height: 50px;
+        border: solid 1px $frame-color;
+        border-radius: 7px;
+        margin-right: 1px;
+        color: $frame-color;
+        cursor: pointer;
+      }
+    }
+ }

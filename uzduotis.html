@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+    <link rel="stylesheet" type="text/css" href="uzduotis.css">
+</head>
+<body>
+
+    <div class="tm-header">
+        <div class="menu">
+            <div class="menubox">
+                <div class="menu-line" onclick="location.href='http://www.google.com'"></div>
+                <div class="menu-line" onclick="location.href='http://www.delfi.lt'"></div>
+                <div class="menu-line" onclick="location.href='http://www.15min.lt'"></div>
+            </div>
+            <div class="tm-tag">
+                <p class="taskmanager"><strong>TASK</strong>MANAGER</p>
+            </div>
+        </div>
+        <div class="backpage">
+            <div class="backarrow">
+                <span class="fa fa-arrow-left fa-2x"></span>
+            </div>
+            <div class="slash-tag">
+                <p class="slash">|</p>
+            </div>
+            <div class="edit-cars-tag">
+                <p class="editcars"> Edit cars</p>
+            </div>
+        </div>
+    </div>
+    <div class="tm-body">
+        <div class="tags">
+            <label class="row-tag">Row #</label>
+            <label class="name-tag">Name</label>
+            <label class="type-tag">Type</label>
+            <label class="colour-tag">Colour</label>
+            <span class="btn-editfields">EDIT FIELDS</span>
+        </div>
+        <div class="input-division">
+            <div class="row-division">
+                <input type="number" id="row" class="form-control row-input" value="">
+            </div>
+            <div class="name-division">
+                <input type="text" id="name" class="form-control name-input" value="">
+            </div>
+            <div class="type-division">
+                <input type="text" id="type" class="form-control type-input" value="">
+            </div>
+            <div class="colour-division">
+                <input type="text" id="colour" class="form-control colour-input" value="">
+            </div>
+
+             <div class="chech-btn-division">
+                <span class="fa fa-check chechbox btn-save-car fa-2x" id="chechbox" aria-hidden="true" onclick="submitCar()"></span>
+              </div>
+              <div class="x-btn-division">
+                <span class="fa fa-times timesbox btn-clear fa-2x"  id="timesbox" aria-hidden="true" onclick="clearCar()"></span>
+              </div>
+        <div class="render-cars">
+
+        </div>
+      </div>
+
+
+    </div>
+
+<script src="https://use.fontawesome.com/e17541f68b.js"></script>
+<script src="uzduotis.js"></script>
+</body>
+</html>

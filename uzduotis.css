@@ -1,0 +1,140 @@
+body {
+  background-color: #dfe4e8; }
+
+.tm-header {
+  background-color: #1b1f25;
+  margin: 0;
+  height: 150px; }
+  .tm-header .menu {
+    padding: 20px 0 0 20px; }
+    .tm-header .menu .menubox {
+      float: left;
+      margin-top: 2px; }
+    .tm-header .menu .menu-line {
+      background-color: #8b9095;
+      width: 30px;
+      height: 3px;
+      margin: 4px 0;
+      cursor: pointer; }
+    .tm-header .menu .taskmanager {
+      color: white;
+      font-size: x-large;
+      font-family: Arial;
+      margin: 0 0 0 50px; }
+    .tm-header .menu .backpage {
+      float: left; }
+    .tm-header .menu .edit-cars-tag {
+      float: left; }
+    .tm-header .menu .slash-tag {
+      float: left; }
+  .tm-header .fa {
+    color: #d5dbe0;
+    margin: 0; }
+  .tm-header .slash {
+    color: #40454a;
+    margin: 0; }
+  .tm-header .editcars {
+    color: #e9edf2;
+    font-family: Arial;
+    font-size: 30px;
+    margin: 0; }
+  .tm-header .backarrow {
+    float: left;
+    padding: 15px; }
+
+.tm-body {
+  background-color: #dfe4e8;
+  margin: 35px 15% 35px 15%; }
+  .tm-body .tags {
+    color: #82888e;
+    font-family: Arial;
+    font-size: 15px;
+    margin: 0 0 0 20px; }
+    .tm-body .tags .row-tag {
+      margin-right: 5%; }
+    .tm-body .tags .name-tag {
+      margin-right: 30%; }
+    .tm-body .tags .type-tag {
+      margin-right: 20%; }
+    .tm-body .tags .colour-tag {
+      margin-right: 15%; }
+    .tm-body .tags .btn-editfields {
+      border: solid 1px #babfc4;
+      border-radius: 7px;
+      padding: 10px 25px 10px 25px;
+      font-size: 14px;
+      cursor: pointer; }
+
+.input-division {
+  background-color: #f4f6f9;
+  padding: 15px 15px 15px 25px;
+  border-radius: 10px;
+  margin-top: 25px;
+  height: 55px; }
+  .input-division .row-division {
+    float: left; }
+    .input-division .row-division .row-input {
+      width: 60px;
+      height: 50px;
+      border: solid 1px #babfc4;
+      border-radius: 7px;
+      margin-right: 20px;
+      -moz-box-shadow: inset 0 8px 5px -6px #f1f2f3;
+      -webkit-box-shadow: inset 0 8px 5px -6px #f1f2f3;
+      box-shadow: inset 0 8px 5px -6px #f1f2f3; }
+  .input-division .name-division {
+    float: left; }
+    .input-division .name-division .name-input {
+      width: 350px;
+      height: 50px;
+      border: solid 1px #babfc4;
+      border-radius: 7px;
+      margin-right: 20px;
+      -moz-box-shadow: inset 0 8px 5px -6px #f1f2f3;
+      -webkit-box-shadow: inset 0 8px 5px -6px #f1f2f3;
+      box-shadow: inset 0 8px 5px -6px #f1f2f3; }
+  .input-division .type-division {
+    float: left; }
+    .input-division .type-division .type-input {
+      width: 250px;
+      height: 50px;
+      border: solid 1px #babfc4;
+      border-radius: 7px;
+      margin-right: 20px;
+      -moz-box-shadow: inset 0 8px 5px -6px #f1f2f3;
+      -webkit-box-shadow: inset 0 8px 5px -6px #f1f2f3;
+      box-shadow: inset 0 8px 5px -6px #f1f2f3; }
+  .input-division .colour-division {
+    float: left; }
+    .input-division .colour-division .colour-input {
+      width: 250px;
+      height: 50px;
+      border: solid 1px #babfc4;
+      border-radius: 7px;
+      margin-right: 20px;
+      -moz-box-shadow: inset 0 8px 5px -6px #f1f2f3;
+      -webkit-box-shadow: inset 0 8px 5px -6px #f1f2f3;
+      box-shadow: inset 0 8px 5px -6px #f1f2f3; }
+  .input-division .chech-btn-division {
+    float: left; }
+    .input-division .chech-btn-division .btn-save-car {
+      width: 50px;
+      height: 50px;
+      border: solid 1px #babfc4;
+      border-radius: 7px;
+      margin-right: 10px;
+      background-color: #646970;
+      color: white;
+      cursor: pointer; }
+  .input-division .x-btn-division {
+    float: left; }
+    .input-division .x-btn-division .btn-clear {
+      width: 50px;
+      height: 50px;
+      border: solid 1px #babfc4;
+      border-radius: 7px;
+      margin-right: 1px;
+      color: #babfc4;
+      cursor: pointer; }
+
+/*# sourceMappingURL=uzduotis.css.map */
