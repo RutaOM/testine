@@ -24,30 +24,30 @@ function renderCars(){
     if(!carList) return; //jei tuscias masyvas-iseik
     var result = "";
 
-
+    var index= 0;
     for(var car of carList){
-        var index= 0;
+
         result += `<div class="row">
                     <div class="col-lg-2 col-md-2 col-xs-2"></div>
                     <div class="col-lg-8 col-md-8 col-xs-8 firstlight">
                         <div class="row line">
                             <div class="col-lg-1 col-md-1 col-xs-1">
-                                <p class="printrow" id="printrow">${car.row}</p>
+                                <p class="printrow">${car.row}</p>
                             </div>
                             <div class="col-lg-4 col-md-4 col-xs-4">
-                                <p class="printcar" id="printcar">${car.name}</p>
+                                <p class="printcar">${car.name}</p>
                             </div>
                             <div class="col-lg-3 col-md-3 col-xs3">
-                                <p class="printtype" id="printtype">${car.type}</p>
+                                <p class="printtype">${car.type}</p>
                             </div>
                             <div class="col-lg-2 col-md-2 col-xs-2">
-                                <p class="printcolour" id="printcolour">${car.colour}</p>
+                                <p class="printcolour">${car.colour}</p>
                             </div>
                              <div>
-                            <span class="btn-edit" onclick="editCar(this.index)">EDIT</span>
+                            <span class="btn-edit" onclick="editCar(${index})">EDIT</span>
                         </div>
                         <div>
-                            <span class="btn-remove" onclick="removeCar(this.index)">REMOVE</span>
+                            <span class="btn-remove" onclick="removeCar(${index})">REMOVE</span>
                         </div>
                         </div>
                 	</div>
@@ -115,25 +115,28 @@ function clearCar(){
 
 function removeCar(index) {
    carList.splice(index,1); //turi removeinti paselektinta elementa
-    console.log(carList);
     renderCars();
 
 }
 
-function editCar(id) {
-    var car = findElement(id);
+function editCar(index) {
+    var tmpCarList = carList;
+    var carData = tmpCarList.splice(index,1);
+    // console.log(carData[0]["name"]);
 
-    function findElement(id) {
-        var count = 0;
-        for(car of carList);{
-            if(car.name == id );
-            return car;
-        }
-        count++;
-
-    }
-
+        rowElement.value = carData[0]["row"];
+        nameElement.value = carData[0]["name"];
+        typeElement.value = carData[0]["type"];
+        colourElement.value = carData[0]["colour"];
 
 }
+
+function findCarBy(id) {
+    for(car of carList){
+        if(car.name == id );
+        return car;
+    }
+}
+
 
 //reikia numesti info atgal i inputus
