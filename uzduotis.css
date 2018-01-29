@@ -1,10 +1,14 @@
 body {
-  background-color: #dfe4e8; }
+  background-color: #dfe4e8;
+  margin: 0;
+  width: 100%;
+  position: center; }
 
 .tm-header {
   background-color: #1b1f25;
   margin: 0;
-  height: 150px; }
+  height: 150px;
+  width: 100%; }
   .tm-header .menu {
     padding: 20px 0 0 20px; }
     .tm-header .menu .menubox {
@@ -44,7 +48,8 @@ body {
 
 .tm-body {
   background-color: #dfe4e8;
-  margin: 35px 15% 35px 15%; }
+  margin: 35px 15% 35px 15%;
+  width: 1164px; }
   .tm-body .tags {
     color: #82888e;
     font-family: Arial;
@@ -64,13 +69,70 @@ body {
       padding: 10px 25px 10px 25px;
       font-size: 14px;
       cursor: pointer; }
+      .tm-body .tags .btn-editfields:hover {
+        background-color: white; }
+  .tm-body .listofcars {
+    margin: 2px;
+    width: 100%;
+    height: 50px; }
+    .tm-body .listofcars:hover {
+      background-color: #e9edf2; }
+    .tm-body .listofcars .print-row-division {
+      margin-left: 2%; }
+      .tm-body .listofcars .print-row-division .printrow {
+        color: #adb3b8;
+        font-family: Arial;
+        float: left;
+        width: 60px;
+        margin-left: 2%; }
+    .tm-body .listofcars .printcar {
+      font-size: 25px;
+      float: left;
+      width: 300px;
+      margin-top: 1%;
+      font-family: Arial; }
+    .tm-body .listofcars .printtype {
+      color: #adb3b8;
+      font-family: Arial;
+      float: left;
+      width: 60px;
+      margin-left: 6%; }
+    .tm-body .listofcars .printcolour {
+      color: #adb3b8;
+      font-family: Arial;
+      float: left;
+      width: 60px;
+      margin-left: 19%; }
+    .tm-body .listofcars .btn-edit {
+      float: left;
+      width: 20px;
+      background-color: #e6e6e6;
+      border: solid 1px #d4d4d4;
+      border-radius: 7px;
+      padding: 7px 12px;
+      font-size: 11px;
+      color: #9b989c;
+      cursor: pointer;
+      margin: 10px 0 0 200px;
+      display: block; }
+  .tm-body .btn-remove {
+    float: left;
+    background-color: #e6e6e6;
+    border: solid 1px #d4d4d4;
+    border-radius: 7px;
+    padding: 7px 12px;
+    font-size: 11px;
+    color: #9b989c;
+    cursor: pointer;
+    margin: 10px 0 0 10px; }
 
 .input-division {
   background-color: #f4f6f9;
   padding: 15px 15px 15px 25px;
   border-radius: 10px;
   margin-top: 25px;
-  height: 55px; }
+  height: 55px;
+  position: center; }
   .input-division .row-division {
     float: left; }
     .input-division .row-division .row-input {
@@ -79,9 +141,9 @@ body {
       border: solid 1px #babfc4;
       border-radius: 7px;
       margin-right: 20px;
-      -moz-box-shadow: inset 0 8px 5px -6px #f1f2f3;
-      -webkit-box-shadow: inset 0 8px 5px -6px #f1f2f3;
-      box-shadow: inset 0 8px 5px -6px #f1f2f3; }
+      -moz-box-shadow: inset 0 8px 5px -6px #d1d1d1;
+      -webkit-box-shadow: inset 0 8px 5px -6px #d1d1d1;
+      box-shadow: inset 0 8px 5px -6px #d1d1d1; }
   .input-division .name-division {
     float: left; }
     .input-division .name-division .name-input {
@@ -90,9 +152,9 @@ body {
       border: solid 1px #babfc4;
       border-radius: 7px;
       margin-right: 20px;
-      -moz-box-shadow: inset 0 8px 5px -6px #f1f2f3;
-      -webkit-box-shadow: inset 0 8px 5px -6px #f1f2f3;
-      box-shadow: inset 0 8px 5px -6px #f1f2f3; }
+      -moz-box-shadow: inset 0 8px 5px -6px #d1d1d1;
+      -webkit-box-shadow: inset 0 8px 5px -6px #d1d1d1;
+      box-shadow: inset 0 8px 5px -6px #d1d1d1; }
   .input-division .type-division {
     float: left; }
     .input-division .type-division .type-input {
@@ -101,9 +163,9 @@ body {
       border: solid 1px #babfc4;
       border-radius: 7px;
       margin-right: 20px;
-      -moz-box-shadow: inset 0 8px 5px -6px #f1f2f3;
-      -webkit-box-shadow: inset 0 8px 5px -6px #f1f2f3;
-      box-shadow: inset 0 8px 5px -6px #f1f2f3; }
+      -moz-box-shadow: inset 0 8px 5px -6px #d1d1d1;
+      -webkit-box-shadow: inset 0 8px 5px -6px #d1d1d1;
+      box-shadow: inset 0 8px 5px -6px #d1d1d1; }
   .input-division .colour-division {
     float: left; }
     .input-division .colour-division .colour-input {
@@ -112,29 +174,33 @@ body {
       border: solid 1px #babfc4;
       border-radius: 7px;
       margin-right: 20px;
-      -moz-box-shadow: inset 0 8px 5px -6px #f1f2f3;
-      -webkit-box-shadow: inset 0 8px 5px -6px #f1f2f3;
-      box-shadow: inset 0 8px 5px -6px #f1f2f3; }
+      -moz-box-shadow: inset 0 8px 5px -6px #d1d1d1;
+      -webkit-box-shadow: inset 0 8px 5px -6px #d1d1d1;
+      box-shadow: inset 0 8px 5px -6px #d1d1d1; }
   .input-division .chech-btn-division {
     float: left; }
     .input-division .chech-btn-division .btn-save-car {
-      width: 50px;
-      height: 50px;
+      width: 52px;
+      height: 52px;
       border: solid 1px #babfc4;
       border-radius: 7px;
       margin-right: 10px;
       background-color: #646970;
       color: white;
       cursor: pointer; }
+      .input-division .chech-btn-division .btn-save-car:hover {
+        background-color: #4c5055; }
   .input-division .x-btn-division {
     float: left; }
     .input-division .x-btn-division .btn-clear {
-      width: 50px;
-      height: 50px;
+      width: 52px;
+      height: 52px;
       border: solid 1px #babfc4;
       border-radius: 7px;
       margin-right: 1px;
       color: #babfc4;
       cursor: pointer; }
+      .input-division .x-btn-division .btn-clear:hover {
+        background-color: white; }
 
 /*# sourceMappingURL=uzduotis.css.map */

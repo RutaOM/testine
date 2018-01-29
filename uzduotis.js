@@ -27,33 +27,26 @@ function renderCars(){
     var index= 0;
     for(var car of carList){
 
-        result += `<div class="row">
-                    <div class="col-lg-2 col-md-2 col-xs-2"></div>
-                    <div class="col-lg-8 col-md-8 col-xs-8 firstlight">
-                        <div class="row line">
-                            <div class="col-lg-1 col-md-1 col-xs-1">
-                                <p class="printrow">${car.row}</p>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-xs-4">
-                                <p class="printcar">${car.name}</p>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-xs3">
-                                <p class="printtype">${car.type}</p>
-                            </div>
-                            <div class="col-lg-2 col-md-2 col-xs-2">
-                                <p class="printcolour">${car.colour}</p>
-                            </div>
-                             <div>
-                            <span class="btn-edit" onclick="editCar(${index})">EDIT</span>
+        result += `<div class="listofcars">
+                        <div class="print-row-division">
+                           <p class="printrow">${car.row}</p>
                         </div>
-                        <div>
-                            <span class="btn-remove" onclick="removeCar(${index})">REMOVE</span>
+                        <div class="print-car-division">
+                           <p class="printcar">${car.name}</p>
                         </div>
+                        <div class="print-type-division">
+                           <p class="printtype">${car.type}</p>
                         </div>
-                	</div>
-                    <div class="col-lg-2 col-md-2 col-xs-2"></div>
-            	</div>`/*riestiniuose rasom kintamojo reiksme*/
-        ;
+                        <div class="print-colour-division">
+                           <p class="printcolour">${car.colour}</p>
+                        </div>
+                        <div class="btn-edit-division">
+                           <span class="btn-edit" onclick="editCar(${index})">EDIT</span>
+                        </div>
+                        <div class="btn-remove-division">
+                           <span class="btn-remove" onclick="removeCar(${index})">REMOVE</span>
+                        </div>
+                     </div>`;
         index++;
     }
     var carListElement = document.querySelector(".car-list");
