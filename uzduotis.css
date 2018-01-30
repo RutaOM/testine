@@ -1,8 +1,7 @@
 body {
   background-color: #dfe4e8;
   margin: 0;
-  width: 100%;
-  position: center; }
+  width: 100%; }
 
 .tm-header {
   background-color: #1b1f25;
@@ -25,26 +24,34 @@ body {
       font-size: x-large;
       font-family: Arial;
       margin: 0 0 0 50px; }
-    .tm-header .menu .backpage {
-      float: left; }
-    .tm-header .menu .edit-cars-tag {
-      float: left; }
-    .tm-header .menu .slash-tag {
-      float: left; }
-  .tm-header .fa {
-    color: #d5dbe0;
-    margin: 0; }
-  .tm-header .slash {
-    color: #40454a;
-    margin: 0; }
-  .tm-header .editcars {
-    color: #e9edf2;
-    font-family: Arial;
-    font-size: 30px;
-    margin: 0; }
-  .tm-header .backarrow {
+  .tm-header .backpage {
     float: left;
-    padding: 15px; }
+    margin-top: 25px; }
+    .tm-header .backpage:hover {
+      cursor: pointer; }
+    .tm-header .backpage .backarrow {
+      float: left;
+      padding: 15px; }
+      .tm-header .backpage .backarrow .fa {
+        color: #d5dbe0;
+        margin: 0; }
+        .tm-header .backpage .backarrow .fa:hover {
+          cursor: pointer; }
+    .tm-header .backpage .slash-tag {
+      float: left;
+      padding: 12px 0 15px 0; }
+      .tm-header .backpage .slash-tag .slash {
+        color: #40454a;
+        font-size: 30px;
+        margin: 0; }
+    .tm-header .backpage .edit-cars-tag {
+      float: left;
+      padding: 15px; }
+      .tm-header .backpage .edit-cars-tag .editcars {
+        color: #e9edf2;
+        font-family: Arial;
+        font-size: 30px;
+        margin: 0; }
 
 .tm-body {
   background-color: #dfe4e8;
@@ -72,135 +79,160 @@ body {
       .tm-body .tags .btn-editfields:hover {
         background-color: white; }
   .tm-body .listofcars {
-    margin: 2px;
-    width: 100%;
-    height: 50px; }
+    max-width: 1160px;
+    height: 60px;
+    border-bottom: solid 1px #bcc2c8; }
     .tm-body .listofcars:hover {
       background-color: #e9edf2; }
+      .tm-body .listofcars:hover:hover .btn-edit, .tm-body .listofcars:hover:hover .btn-remove {
+        display: block; }
     .tm-body .listofcars .print-row-division {
-      margin-left: 2%; }
+      width: 60px;
+      height: 60px;
+      float: left;
+      margin-left: 50px; }
       .tm-body .listofcars .print-row-division .printrow {
         color: #adb3b8;
         font-family: Arial;
         float: left;
-        width: 60px;
+        max-width: 60px;
         margin-left: 2%; }
-    .tm-body .listofcars .printcar {
-      font-size: 25px;
-      float: left;
-      width: 300px;
-      margin-top: 1%;
-      font-family: Arial; }
-    .tm-body .listofcars .printtype {
-      color: #adb3b8;
-      font-family: Arial;
-      float: left;
-      width: 60px;
-      margin-left: 6%; }
-    .tm-body .listofcars .printcolour {
-      color: #adb3b8;
-      font-family: Arial;
-      float: left;
-      width: 60px;
-      margin-left: 19%; }
-    .tm-body .listofcars .btn-edit {
-      float: left;
-      width: 20px;
-      background-color: #e6e6e6;
-      border: solid 1px #d4d4d4;
-      border-radius: 7px;
-      padding: 7px 12px;
-      font-size: 11px;
-      color: #9b989c;
-      cursor: pointer;
-      margin: 10px 0 0 200px;
-      display: block; }
-  .tm-body .btn-remove {
-    float: left;
-    background-color: #e6e6e6;
-    border: solid 1px #d4d4d4;
-    border-radius: 7px;
-    padding: 7px 12px;
-    font-size: 11px;
-    color: #9b989c;
-    cursor: pointer;
-    margin: 10px 0 0 10px; }
-
-.input-division {
-  background-color: #f4f6f9;
-  padding: 15px 15px 15px 25px;
-  border-radius: 10px;
-  margin-top: 25px;
-  height: 55px;
-  position: center; }
-  .input-division .row-division {
-    float: left; }
-    .input-division .row-division .row-input {
-      width: 60px;
-      height: 50px;
-      border: solid 1px #babfc4;
-      border-radius: 7px;
-      margin-right: 20px;
-      -moz-box-shadow: inset 0 8px 5px -6px #d1d1d1;
-      -webkit-box-shadow: inset 0 8px 5px -6px #d1d1d1;
-      box-shadow: inset 0 8px 5px -6px #d1d1d1; }
-  .input-division .name-division {
-    float: left; }
-    .input-division .name-division .name-input {
+    .tm-body .listofcars .print-car-division {
       width: 350px;
-      height: 50px;
-      border: solid 1px #babfc4;
-      border-radius: 7px;
-      margin-right: 20px;
-      -moz-box-shadow: inset 0 8px 5px -6px #d1d1d1;
-      -webkit-box-shadow: inset 0 8px 5px -6px #d1d1d1;
-      box-shadow: inset 0 8px 5px -6px #d1d1d1; }
-  .input-division .type-division {
-    float: left; }
-    .input-division .type-division .type-input {
-      width: 250px;
-      height: 50px;
-      border: solid 1px #babfc4;
-      border-radius: 7px;
-      margin-right: 20px;
-      -moz-box-shadow: inset 0 8px 5px -6px #d1d1d1;
-      -webkit-box-shadow: inset 0 8px 5px -6px #d1d1d1;
-      box-shadow: inset 0 8px 5px -6px #d1d1d1; }
-  .input-division .colour-division {
-    float: left; }
-    .input-division .colour-division .colour-input {
-      width: 250px;
-      height: 50px;
-      border: solid 1px #babfc4;
-      border-radius: 7px;
-      margin-right: 20px;
-      -moz-box-shadow: inset 0 8px 5px -6px #d1d1d1;
-      -webkit-box-shadow: inset 0 8px 5px -6px #d1d1d1;
-      box-shadow: inset 0 8px 5px -6px #d1d1d1; }
-  .input-division .chech-btn-division {
-    float: left; }
-    .input-division .chech-btn-division .btn-save-car {
-      width: 52px;
-      height: 52px;
-      border: solid 1px #babfc4;
-      border-radius: 7px;
-      margin-right: 10px;
-      background-color: #646970;
-      color: white;
-      cursor: pointer; }
-      .input-division .chech-btn-division .btn-save-car:hover {
-        background-color: #4c5055; }
-  .input-division .x-btn-division {
-    float: left; }
-    .input-division .x-btn-division .btn-clear {
-      width: 52px;
-      height: 52px;
-      border: solid 1px #babfc4;
-      border-radius: 7px;
-      margin-right: 1px;
-      color: #babfc4;
-      cursor: pointer; }
-      .input-division .x-btn-division .btn-clear:hover {
-        background-color: white; }
+      height: 60px;
+      float: left; }
+      .tm-body .listofcars .print-car-division .printcar {
+        font-size: 25px;
+        max-width: 350px;
+        margin-top: 7px;
+        font-family: Arial; }
+    .tm-body .listofcars .print-type-division {
+      width: 252px;
+      height: 60px;
+      float: left;
+      margin-left: 20px; }
+      .tm-body .listofcars .print-type-division .printtype {
+        color: #adb3b8;
+        font-family: Arial;
+        max-width: 252px; }
+    .tm-body .listofcars .print-colour-division {
+      width: 252px;
+      height: 60px;
+      float: left;
+      margin-left: 20px; }
+      .tm-body .listofcars .print-colour-division .printcolour {
+        color: #adb3b8;
+        font-family: Arial;
+        max-width: 252px; }
+    .tm-body .listofcars .btn-edit-division {
+      float: left;
+      margin-top: 15px; }
+      .tm-body .listofcars .btn-edit-division .btn-edit {
+        background-color: #e6e6e6;
+        border: solid 1px #d4d4d4;
+        border-radius: 7px;
+        padding: 7px 12px;
+        font-size: 11px;
+        font-family: Arial;
+        color: #9b989c;
+        cursor: pointer;
+        display: none; }
+        .tm-body .listofcars .btn-edit-division .btn-edit:hover {
+          background-color: white; }
+    .tm-body .listofcars .btn-remove-division {
+      float: left;
+      margin-top: 15px; }
+      .tm-body .listofcars .btn-remove-division .btn-remove {
+        margin-left: 10px;
+        background-color: #e6e6e6;
+        border: solid 1px #d4d4d4;
+        border-radius: 7px;
+        padding: 7px 13px 7px 12px;
+        font-size: 11px;
+        font-family: Arial;
+        color: #9b989c;
+        cursor: pointer;
+        display: none; }
+        .tm-body .listofcars .btn-remove-division .btn-remove:hover {
+          background-color: white; }
+  .tm-body .input-division {
+    background-color: #f4f6f9;
+    padding: 15px 15px 15px 25px;
+    border-radius: 10px;
+    margin-top: 25px;
+    height: 55px;
+    position: center; }
+    .tm-body .input-division .row-division {
+      float: left; }
+      .tm-body .input-division .row-division .row-input {
+        width: 60px;
+        height: 50px;
+        border: solid 1px #babfc4;
+        border-radius: 7px;
+        margin-right: 20px;
+        -moz-box-shadow: inset 0 8px 5px -6px #d1d1d1;
+        -webkit-box-shadow: inset 0 8px 5px -6px #d1d1d1;
+        box-shadow: inset 0 8px 5px -6px #d1d1d1; }
+    .tm-body .input-division .name-division {
+      float: left; }
+      .tm-body .input-division .name-division .name-input {
+        width: 350px;
+        height: 50px;
+        border: solid 1px #babfc4;
+        border-radius: 7px;
+        margin-right: 20px;
+        -moz-box-shadow: inset 0 8px 5px -6px #d1d1d1;
+        -webkit-box-shadow: inset 0 8px 5px -6px #d1d1d1;
+        box-shadow: inset 0 8px 5px -6px #d1d1d1; }
+    .tm-body .input-division .type-division {
+      float: left; }
+      .tm-body .input-division .type-division .type-input {
+        width: 250px;
+        height: 50px;
+        border: solid 1px #babfc4;
+        border-radius: 7px;
+        margin-right: 20px;
+        -moz-box-shadow: inset 0 8px 5px -6px #d1d1d1;
+        -webkit-box-shadow: inset 0 8px 5px -6px #d1d1d1;
+        box-shadow: inset 0 8px 5px -6px #d1d1d1; }
+    .tm-body .input-division .colour-division {
+      float: left; }
+      .tm-body .input-division .colour-division .colour-input {
+        width: 250px;
+        height: 50px;
+        border: solid 1px #babfc4;
+        border-radius: 7px;
+        margin-right: 20px;
+        -moz-box-shadow: inset 0 8px 5px -6px #d1d1d1;
+        -webkit-box-shadow: inset 0 8px 5px -6px #d1d1d1;
+        box-shadow: inset 0 8px 5px -6px #d1d1d1; }
+    .tm-body .input-division .chech-btn-division {
+      float: left; }
+      .tm-body .input-division .chech-btn-division .btn-save-car {
+        width: 52px;
+        height: 52px;
+        border: solid 1px #babfc4;
+        border-radius: 7px;
+        margin-right: 10px;
+        background-color: #646970;
+        color: white;
+        cursor: pointer; }
+        .tm-body .input-division .chech-btn-division .btn-save-car:hover {
+          background-color: #4c5055; }
+    .tm-body .input-division .x-btn-division {
+      float: left; }
+      .tm-body .input-division .x-btn-division .btn-clear {
+        width: 52px;
+        height: 52px;
+        border: solid 1px #babfc4;
+        border-radius: 7px;
+        margin-right: 1px;
+        color: #babfc4;
+        cursor: pointer; }
+        .tm-body .input-division .x-btn-division .btn-clear:hover {
+          background-color: white; }
+
+.car-list {
+  width: 100%; }
 
 /*# sourceMappingURL=uzduotis.css.map */

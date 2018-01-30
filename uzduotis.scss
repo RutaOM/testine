@@ -25,7 +25,6 @@ body{
   background-color: $body-color;
   margin: 0;
   width: 100%;
-  position: center;
 }
 
 .tm-header{
@@ -34,15 +33,15 @@ body{
   height: 150px;
   width: 100%;
 
-  .menu {
+  .menu{
     padding: 20px 0 0 20px;
 
-    .menubox {
+    .menubox{
       float: left;
       margin-top: 2px;
     }
 
-    .menu-line {
+    .menu-line{
       background-color: $menu-color;
       width: 30px;
       height: 3px;
@@ -56,189 +55,206 @@ body{
       font-family: $font-stack;
       margin: 0 0 0 50px;
     }
+  }
 
     .backpage{
       float: left;
-    }
+      margin-top: 25px;
+      &:hover{
+        cursor: pointer;
+      }
+      .backarrow{
+      float: left;
+      padding: 15px;
+        .fa{
+           color: $back-arrow-color;
+           margin: 0;
+            &:hover{
+              cursor: pointer;
+            }
+      }
+     }
+
+      .slash-tag{
+        float: left;
+        padding: 12px 0 15px 0;
+        .slash{
+          color: $slash-color;
+          font-size: 30px;
+          margin: 0;
+        }
+      }
 
     .edit-cars-tag{
       float: left;
-    }
-
-
-    .slash-tag{
-      float: left;
-    }
-  }
-
-
-    .fa{
-      color: $back-arrow-color;
-      margin: 0;
-    }
-
-    .slash{
-      color: $slash-color;
-      margin: 0;
-    }
-
-    .editcars{
+      padding: 15px;
+      .editcars{
       color: $edit-cars-tag-color;
       font-family: $font-stack;
       font-size: 30px;
       margin: 0;
+      }
     }
-
-  .backarrow{
-    float: left;
-    padding: 15px;
-
   }
 }
 
 
 
-.tm-body{
+.tm-body {
   background-color: $body-color;
   margin: 35px 15% 35px 15%;
   width: 1164px;
 
-
-
-  .tags{
+  .tags {
     color: $tag-color;
     font-family: $font-stack;
     font-size: 15px;
     margin: 0 0 0 20px;
 
-
-    .row-tag{
-      margin-right: 5% ;
+    .row-tag {
+      margin-right: 5%;
     }
 
-    .name-tag{
+    .name-tag {
       margin-right: 30%;
     }
 
-    .type-tag{
+    .type-tag {
       margin-right: 20%;
     }
 
-    .colour-tag{
+    .colour-tag {
       margin-right: 15%;
     }
 
-    .btn-editfields{
+    .btn-editfields {
       border: solid 1px $frame-color;
       border-radius: 7px;
       padding: 10px 25px 10px 25px;
       font-size: 14px;
       cursor: pointer;
-       &:hover{
-         background-color: white;
+      &:hover {
+        background-color: white;
 
-       }
+      }
     }
-
 
   }
 
-  .listofcars{
-    margin: 2px;
-    width: 100%;
-    height: 50px;
-    &:hover{
+  .listofcars {
+    max-width: 1160px;
+    height: 60px;
+    border-bottom:solid 1px $line-color ;
+    &:hover {
       background-color: $onclick-line-color;
+      &:hover{
+        .btn-edit, .btn-remove{
+          display: block;
+        }
+      }
     }
 
-    .print-row-division{
-      margin-left: 2%;
+    .print-row-division {
+      width: 60px;
+      height: 60px;
+      float: left;
+      margin-left: 50px;
 
-
-      .printrow{
+      .printrow {
         color: $car-atributes-color;
         font-family: $font-stack;
         float: left;
-        width: 60px;
+        max-width: 60px;
         margin-left: 2%;
       }
     }
 
-      .printcar{
+    .print-car-division{
+      width: 350px;
+      height: 60px;
+      float: left;
+      .printcar {
         font-size: 25px;
-        float: left;
-        width: 300px;
-        margin-top: 1%;
+        max-width: 350px;
+        margin-top: 7px;
         font-family: $font-stack;
 
       }
+  }
 
-
-      .printtype{
+    .print-type-division{
+      width: 252px;
+      height: 60px;
+      float: left;
+      margin-left: 20px;
+      .printtype {
         color: $car-atributes-color;
         font-family: $font-stack;
-        float: left;
-        width: 60px;
-        margin-left: 6%;
+        max-width: 252px;
       }
-
-      .printcolour{
-        color: $car-atributes-color;
-        font-family: $font-stack;
-        float: left;
-        width: 60px;
-        margin-left: 19%;
-      }
-
-      .btn-edit {
-        float: left;
-        width: 20px;
-        background-color: #e6e6e6;
-        border: solid 1px #d4d4d4;
-        border-radius: 7px;
-        padding: 7px 12px;
-        font-size: 11px;
-        font-family: $font-stack;
-        color: #9b989c;
-        cursor: pointer;
-        margin: 10px 0 0 200px;
-        display: none;
-        &:hover {
-          background-color: white;
-        }
-      }
-
-
-
-      .btn-remove{
-        float: left;
-        background-color: #e6e6e6;
-        border: solid 1px #d4d4d4;
-        border-radius: 7px;
-        padding: 7px 12px;
-        font-size: 11px;
-        font-family: $font-stack;
-        color: #9b989c;
-        cursor: pointer;
-        margin: 10px 0 0 10px;
-        display: none;
-          &:hover{
-          background-color: white;
-        }
-      }
-
   }
 
 
+    .print-colour-division{
+      width: 252px;
+      height: 60px;
+      float: left;
+      margin-left: 20px;
+      .printcolour {
+        color: $car-atributes-color;
+        font-family: $font-stack;
+        max-width: 252px;
+      }
+  }
 
-.input-division {
-   background-color: $input-row-color;
-   padding: 15px 15px 15px 25px;
-   border-radius: 10px;
-   margin-top: 25px;
-   height: 55px;
-  position: center;
+    .btn-edit-division{
+      float: left;
+      margin-top: 15px;
 
+      .btn-edit {
+        background-color: #e6e6e6;
+        border: solid 1px #d4d4d4;
+        border-radius: 7px;
+        padding: 7px 12px;
+        font-size: 11px;
+        font-family: $font-stack;
+        color: #9b989c;
+        cursor: pointer;
+        display: none;
+          &:hover {
+            background-color: white;
+          }
+        }
+  }
+
+    .btn-remove-division{
+      float: left;
+      margin-top: 15px;
+        .btn-remove {
+        margin-left: 10px;
+        background-color: #e6e6e6;
+        border: solid 1px #d4d4d4;
+        border-radius: 7px;
+        padding: 7px 13px 7px 12px;
+        font-size: 11px;
+        font-family: $font-stack;
+        color: #9b989c;
+        cursor: pointer;
+        display: none;
+          &:hover {
+            background-color: white;
+          }
+        }
+  }
+  }
+
+  .input-division {
+    background-color: $input-row-color;
+    padding: 15px 15px 15px 25px;
+    border-radius: 10px;
+    margin-top: 25px;
+    height: 55px;
+    position: center;
 
     .row-division {
       float: left;
@@ -249,9 +265,9 @@ body{
         border: solid 1px $frame-color;
         border-radius: 7px;
         margin-right: 20px;
-        -moz-box-shadow:    inset 0 8px 5px -6px $shadow-color;
+        -moz-box-shadow: inset 0 8px 5px -6px $shadow-color;
         -webkit-box-shadow: inset 0 8px 5px -6px $shadow-color;
-        box-shadow:         inset 0 8px 5px -6px $shadow-color;
+        box-shadow: inset 0 8px 5px -6px $shadow-color;
       }
 
     }
@@ -265,9 +281,9 @@ body{
         border: solid 1px $frame-color;
         border-radius: 7px;
         margin-right: 20px;
-        -moz-box-shadow:    inset 0 8px 5px -6px $shadow-color;
+        -moz-box-shadow: inset 0 8px 5px -6px $shadow-color;
         -webkit-box-shadow: inset 0 8px 5px -6px $shadow-color;
-        box-shadow:         inset 0 8px 5px -6px $shadow-color;
+        box-shadow: inset 0 8px 5px -6px $shadow-color;
       }
     }
 
@@ -280,9 +296,9 @@ body{
         border: solid 1px $frame-color;
         border-radius: 7px;
         margin-right: 20px;
-        -moz-box-shadow:    inset 0 8px 5px -6px $shadow-color;
+        -moz-box-shadow: inset 0 8px 5px -6px $shadow-color;
         -webkit-box-shadow: inset 0 8px 5px -6px $shadow-color;
-        box-shadow:         inset 0 8px 5px -6px $shadow-color;
+        box-shadow: inset 0 8px 5px -6px $shadow-color;
       }
     }
 
@@ -295,9 +311,9 @@ body{
         border: solid 1px $frame-color;
         border-radius: 7px;
         margin-right: 20px;
-        -moz-box-shadow:    inset 0 8px 5px -6px $shadow-color;
+        -moz-box-shadow: inset 0 8px 5px -6px $shadow-color;
         -webkit-box-shadow: inset 0 8px 5px -6px $shadow-color;
-        box-shadow:         inset 0 8px 5px -6px $shadow-color;
+        box-shadow: inset 0 8px 5px -6px $shadow-color;
       }
     }
 
@@ -313,10 +329,10 @@ body{
         background-color: $chech-btn-color;
         color: white;
         cursor: pointer;
-          &:hover{
-            background-color: #4c5055;
+        &:hover {
+          background-color: #4c5055;
 
-          }
+        }
       }
     }
 
@@ -331,12 +347,20 @@ body{
         margin-right: 1px;
         color: $frame-color;
         cursor: pointer;
-          &:hover{
-            background-color: white;
-          }
-
+          //.x-btn-division{
+          //  width: 30px;
+          //  height: 30px;
+          // margin: 20px 0 0 20px;
+          //}
+        &:hover {
+          background-color: white;
+        }
 
       }
     }
+  }
+}
+ .car-list{
+   width: 100%;
  }
 
