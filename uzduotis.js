@@ -27,7 +27,7 @@ function renderCars(){
     var index= 0;
     for(var car of carList){
 
-        result += `<div class="listofcars">
+        result += `<div class="listofcars" id="list-item-${index}">
                         <div class="print-row-division">
                            <p class="printrow">${car.row}</p>
                         </div>
@@ -117,10 +117,35 @@ function editCar(index) {
     var carData = tmpCarList.splice(index,1);
     // console.log(carData[0]["name"]);
 
-        rowElement.value = carData[0]["row"];
-        nameElement.value = carData[0]["name"];
-        typeElement.value = carData[0]["type"];
-        colourElement.value = carData[0]["colour"];
+        var html = `<div class="input-division">
+                <div class="row-division">
+                <input type="number" id="row" class="form-control row-input" value="">
+                </div>
+                <div class="name-division">
+                <input type="text" id="name" class="form-control name-input" value="">
+                </div>
+                <div class="type-division">
+                <input type="text" id="type" class="form-control type-input" value="">
+                </div>
+                <div class="colour-division">
+                <input type="text" id="colour" class="form-control colour-input" value="">
+                </div>
+        
+                <div class="chech-btn-division">
+                <span class="fa fa-check btn-save-car fa-2x" aria-hidden="true" onclick="submitCar()"></span>
+                </div>
+                <div class="x-btn-division">
+                <span class="fa fa-times btn-clear fa-2x"  aria-hidden="true" onclick="clearCar()"></span>
+                </div>
+         </div>`;
+
+    var clickedRowElement = document.getElementById('list-item-'+index);
+    clickedRowElement.innerHTML=html;
+
+        // rowElement.value = carData[0]["row"];
+        // nameElement.value = carData[0]["name"];
+        // typeElement.value = carData[0]["type"];
+        // colourElement.value = carData[0]["colour"];
 
 }
 
